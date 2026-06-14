@@ -35,6 +35,8 @@ CREATE TABLE Bookings (
     check(total_cost >= 0) 
 );
 
+
+
 INSERT INTO Users (user_id, full_name, email, role, phone_number) VALUES
 (1, 'Tanvir Rahman', 'tanvir@mail.com', 'Football Fan', '+8801711111111'),
 (2, 'Asif Haque', 'asif@mail.com', 'Football Fan', '+8801722222222'),
@@ -87,3 +89,5 @@ left join bookings as b on b.user_id = u.user_id;
 
 select booking_id, match_id, round(total_cost) as total_cost from bookings
 where total_cost > (select avg(total_cost) from bookings);
+
+
