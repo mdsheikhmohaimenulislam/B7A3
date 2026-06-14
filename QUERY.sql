@@ -62,3 +62,7 @@ select match_id, fixture, round(base_ticket_price) as base_ticket_price
 from matches
 where match_status = 'Available' and tournament_category = 'Champions League'
 
+
+select user_id, full_name, email from users
+where full_name ilike 'Tanvir%'
+or full_name ilike '%Haque%'
