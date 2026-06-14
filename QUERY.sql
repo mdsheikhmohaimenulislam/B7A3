@@ -72,3 +72,10 @@ select booking_id,user_id,match_id,
   coalesce(payment_status, 'Action Required') as systematic_status
 from bookings
 where payment_status is null;
+
+
+select booking_id, full_name, fixture, 
+  round(total_cost) as total_cost
+  from bookings as b
+inner join users as s on b.user_id= s.user_id
+inner join matches as m on  b.match_id = m.match_id
