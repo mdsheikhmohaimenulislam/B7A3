@@ -83,3 +83,7 @@ inner join matches as m on  b.match_id = m.match_id
 
 select u.user_id, u.full_name, b.booking_id from users as u
 left join bookings as b on b.user_id = u.user_id;
+
+
+select booking_id, match_id, round(total_cost) as total_cost from bookings
+where total_cost > (select avg(total_cost) from bookings);
