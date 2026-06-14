@@ -79,3 +79,7 @@ select booking_id, full_name, fixture,
   from bookings as b
 inner join users as s on b.user_id= s.user_id
 inner join matches as m on  b.match_id = m.match_id
+
+
+select u.user_id, u.full_name, b.booking_id from users as u
+left join bookings as b on b.user_id = u.user_id;
