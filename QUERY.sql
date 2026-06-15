@@ -30,7 +30,8 @@ CREATE TABLE Bookings (
     seat_number varchar(30),
     payment_status varchar(50),
     total_cost decimal(10,2) not null,
-    
+
+    unique (match_id, seat_number),
     check(payment_status in ('Pending','Confirmed','Cancelled','Refunded')),
     check(total_cost >= 0) 
 );
