@@ -120,11 +120,7 @@ A single user can make multiple bookings, and each match can have multiple booki
 | 505        | 3       | 102      | C-20        | Pending        | 120        |
 
 ---
----
 
-# 🧾 SQL QUERIES
-
----
 ---
 
 # 🗂️ 2. QUERY.sql (FILE)
