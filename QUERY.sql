@@ -92,3 +92,8 @@ select booking_id, match_id, round(total_cost) as total_cost from bookings
 where total_cost > (select avg(total_cost) from bookings);
 
 
+select match_id, fixture,
+  round(base_ticket_price) as base_ticket_price
+  from matches
+order by base_ticket_price desc limit 2 offset 1;
+
