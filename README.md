@@ -130,10 +130,7 @@ A single user can make multiple bookings, and each match can have multiple booki
 # 🗂️ 2. QUERY.sql (FILE)
 
 ```sql
--- =========================
--- Football Ticket Booking System
--- SQL Queries
--- =========================
+
 
 -- Query 1
 SELECT match_id, fixture, base_ticket_price
@@ -179,7 +176,7 @@ FROM Matches
 ORDER BY base_ticket_price DESC
 OFFSET 1
 LIMIT 2;
-
+```
 # 🚀 Conclusion
 
 This project demonstrates how a real-world football ticket booking system can be structured using relational database design principles.
